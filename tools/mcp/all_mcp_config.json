@@ -1,0 +1,10 @@
+{
+  "amap-sse": {
+    "url": "https://mcp.amap.com/sse?key=8489a1e2b419d5e996be19d64a65e50bb0757",
+    "transport": "sse"
+  },
+  "exec-sse": {
+    "url": "http://127.0.0.1:9000/sse",
+    "transport": "sse"
+  }
+}
