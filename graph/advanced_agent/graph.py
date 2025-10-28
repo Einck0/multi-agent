@@ -33,6 +33,12 @@ def route_when_plan_completed(state: State):
     else:
         return False
 
+
+def get_graph_builder():
+    """Build and return the base state graph with all nodes and edges."""
+    base_graph = _build_base_graph()
+    return base_graph
+
 def build_graph_with_memory():
     """Build and return the agent workflow graph with memory."""
     memory = MemorySaver()

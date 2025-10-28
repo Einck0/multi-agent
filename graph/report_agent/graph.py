@@ -26,6 +26,11 @@ def _build_base_graph():
     return builder
 
 
+def get_graph():
+    """Build and return the base state graph with all nodes and edges."""
+    base_graph = _build_base_graph()
+    return base_graph
+
 def build_graph_with_memory():
     """Build and return the agent workflow graph with memory."""
     memory = MemorySaver()

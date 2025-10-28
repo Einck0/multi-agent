@@ -1,0 +1,28 @@
+llm:
+  openai:
+    OPENAI_API_KEY: sk-fsdfsfdffsfsf419fsfd3B6
+    OPENAI_API_BASE: https://sfsf.top/v1
+    DEFAULT_MODEL: gemini-2.5-flash
+
+embedding:
+  ENABLE_SEPARATE_EMBEDDING: true
+
+embeddings:
+  openai:
+    OPENAI_API_KEY: k-S6SIZjrJ8sfdsfdsf483c8a32
+    OPENAI_API_BASE: https://fsdf.com/v1
+    DEFAULT_EMBEDDING_MODEL: text-embedding-3-small
+
+log:
+  LOG_FILE: log/app.log
+  MAX_BYTES: 5e6
+  BACKUP_COUNT: 3
+
+database:
+  DB_URI: postgresql://postgres:postgres@localhost:5432/postgres?sslmode=disable
+  CHROMADB_DIRECTORY: chromaDB
+  CHROMADB_COLLECTION_NAME: demo001
+
+api:
+  HOST: 0.0.0.0
+  PORT: 8012

@@ -1,7 +1,10 @@
+import json
+import logging
 import os
 
 import yaml
 
+logger = logging.getLogger(__name__)
 current_directory = os.getcwd()
 config_path = os.path.join(current_directory, 'config.yaml')
 
@@ -11,7 +14,7 @@ def load_yaml_config(config_file=config_path):
             config = yaml.safe_load(f)  # 安全加载 YAML 文件
         return config
     except FileNotFoundError:
-        print(f"Error: YAML file not found at {config_file}")
+        logger.error(f"Error: YAML file not found at {config_file}")
 
 
 def load_yaml_to_env(yaml_path=config_path):
@@ -25,14 +28,14 @@ def load_yaml_to_env(yaml_path=config_path):
             for key, value in config.items():
                 # 将键和值都转换为字符串，以确保兼容性
                 os.environ[str(key)] = str(value)
-            print(f"Successfully loaded config into environment variables.")
+            logger.info(f"Successfully loaded config into environment variables.")
         else:
-            print(f"Warning: yaml does not contain a dictionary at the top level.")
+            logger.warning(f"Warning: yaml does not contain a dictionary at the top level.")
 
     except yaml.YAMLError as e:
-        print(f"Error parsing YAML file: {e}")
+        logger.error(f"Error parsing YAML file: {e}")
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        logger.error(f"An unexpected error occurred: {e}")
 
 def tools_list_to_dict(tool_list):
     processed_dict = {}
@@ -45,6 +48,12 @@ def tools_list_to_dict(tool_list):
         else:
             processed_dict[item['name']] = item
     return processed_dict
+
+
+def message_to_dict(messages):
+    response = messages.model_dump_json(indent=4, exclude_none=True)
+    response = json.loads(response)
+    return response
 
 if __name__ == "__main__":
     load_yaml_to_env()

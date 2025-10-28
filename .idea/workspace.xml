@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6da0f6e0-f8b0-4e35-9e47-75ab73ddba7b" name="更改" comment="First Commit" />
+    <list default="true" id="6da0f6e0-f8b0-4e35-9e47-75ab73ddba7b" name="更改" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/ai_debugger.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ai_toolkit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config_example.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/tools/tools_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/agent_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/config_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/llm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastapi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/nodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/prompts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/state.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/report_agent/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/report_agent/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/mcp/mcp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/mcp/mcp_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tools.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +108,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "D:/Projects/Python/multi-agent/graph/report_agent",
     "node.js.detected.package.eslint": "true",
@@ -103,6 +126,7 @@
       <recent name="D:\Projects\Python\multi-agent\graph\report_agent" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Python\multi-agent" />
       <recent name="D:\Projects\Python\multi-agent\graph\advanced_agent" />
       <recent name="D:\Projects\Python\multi-agent\tools\mcp" />
     </key>
@@ -232,9 +256,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.graph" />
-        <item itemvalue="Python.exec_mcp_server" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.exec_mcp_server" />
+        <item itemvalue="Python.graph" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.mcp_server" />
       </list>
@@ -262,6 +286,8 @@
       <workItem from="1760698281094" duration="556000" />
       <workItem from="1760855074458" duration="56782000" />
       <workItem from="1761209701440" duration="47000" />
+      <workItem from="1761283820720" duration="9933000" />
+      <workItem from="1761533049401" duration="20403000" />
     </task>
     <task id="LOCAL-00001" summary="完成可以实现复杂功能的智能体">
       <option name="closed" value="true" />
@@ -344,6 +370,11 @@
           <line>20</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/agent_utils.py</url>
+          <line>775</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -356,15 +387,16 @@
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="plan['steps'][-1]['status']" />
+        <watch expression="input.append(response)" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/multi_agent$mcp_server__1_.coverage" NAME="mcp_server (1) 覆盖结果" MODIFIED="1761122098681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mcp_server" />
     <SUITE FILE_PATH="coverage/multi_agent$graph.coverage" NAME="graph 覆盖结果" MODIFIED="1760865791765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/multi_agent$main.coverage" NAME="main 覆盖结果" MODIFIED="1761142402800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/multi_agent$main.coverage" NAME="main 覆盖结果" MODIFIED="1761638730355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/multi_agent$third_party_mcp_server.coverage" NAME="mcp_server 覆盖结果" MODIFIED="1761123811201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:\Projects\Python\multi-agent" />
-    <SUITE FILE_PATH="coverage/multi_agent$exec_mcp_server.coverage" NAME="exec_mcp_server 覆盖结果" MODIFIED="1761134529479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools/mcp" />
+    <SUITE FILE_PATH="coverage/multi_agent$exec_mcp_server.coverage" NAME="exec_mcp_server 覆盖结果" MODIFIED="1761570785371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools/mcp" />
     <SUITE FILE_PATH="coverage/multi_agent$test.coverage" NAME="test 覆盖结果" MODIFIED="1761130714205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

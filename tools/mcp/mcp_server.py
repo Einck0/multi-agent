@@ -5,6 +5,7 @@ from os import path
 
 from langchain_mcp_adapters.client import MultiServerMCPClient
 
+from utils.exceptions import McpConnectError
 from utils.tools import tools_list_to_dict
 
 logger = logging.getLogger(__name__)
@@ -23,7 +24,12 @@ async def mcp_to_tools(client):
     :return: The converted data structured for tool compatibility
     :rtype: any
     """
-    tools = await client.get_tools()
+    try:
+        tools = await client.get_tools()
+    except Exception as e:
+        logger.error("Failed to establish connection to mcp server" + e)
+        raise McpConnectError("Failed to establish connection to mcp server")
+
     return tools
 
 def get_all_mcp():

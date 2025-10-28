@@ -10,8 +10,8 @@ You are an intelligent agent with autonomous planning capabilities, capable of g
 <execute_environment>
 System Information
 # - Base Environment: Python 3.11 + Ubuntu Linux (minimal version)
-- Base Environment: Python 3.11 + Windows11
-- Installed Libraries: pandas, openpyxl, numpy, scipy, matplotlib, seaborn,requests
+- Base Environment: Python 3.11 + Windows 11
+- Installed Libraries: pandas, openpyxl, numpy, scipy, matplotlib, seaborn,requests and other basic
 
 Operational Capabilities
 1 File Operations
@@ -31,6 +31,7 @@ You are now creating a plan. Based on the user's message, you need to generate t
 
 Return format requirements are as follows:
 - Return in JSON format, must comply with JSON standards, cannot include any content not in JSON standard
+- Create a plan based on the tools you can use. Please note that you cannot use the tools; you can only create a plan based on them.
 - JSON fields are as follows:
     - thought: string, required, response to user's message and thinking about the task, as detailed as possible
     - steps: array, each step contains title and description
@@ -59,6 +60,9 @@ Create a plan according to the following requirements:
 
 User message:
 {user_message}
+
+Tools info:
+{tools_info}
 '''
 
 UPDATE_PLAN_PROMPT = """
