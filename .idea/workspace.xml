@@ -4,28 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6da0f6e0-f8b0-4e35-9e47-75ab73ddba7b" name="更改" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/ai_debugger.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ai_toolkit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config_example.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/tools/tools_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/agent_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/config_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/llm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6da0f6e0-f8b0-4e35-9e47-75ab73ddba7b" name="更改" comment="Optimize logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastapi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/prompts.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/prompts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/advanced_agent/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/advanced_agent/state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/report_agent/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/report_agent/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/mcp/mcp_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/mcp/mcp_server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +268,7 @@
       <workItem from="1760855074458" duration="56782000" />
       <workItem from="1761209701440" duration="47000" />
       <workItem from="1761283820720" duration="9933000" />
-      <workItem from="1761533049401" duration="20403000" />
+      <workItem from="1761533049401" duration="21253000" />
     </task>
     <task id="LOCAL-00001" summary="完成可以实现复杂功能的智能体">
       <option name="closed" value="true" />
@@ -321,7 +302,71 @@
       <option name="project" value="LOCAL" />
       <updated>1761209641529</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640260149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640260149</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640358128</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640358128</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640401271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640401271</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640440724</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640440724</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640528982</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640528982</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640547541</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640547541</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640605589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640605589</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Optimize logic">
+      <option name="closed" value="true" />
+      <created>1761640624595</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761640624595</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,8 +403,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成可以实现复杂功能的智能体" />
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Optimize logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimize logic" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -372,7 +419,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils/agent_utils.py</url>
-          <line>775</line>
+          <line>780</line>
           <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
